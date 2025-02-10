@@ -3,9 +3,11 @@
 
 // See:
 // https://www.prisma.io/docs/concepts/components/prisma-schema/generators
+// https://www.prisma.io/docs/orm/prisma-client/deployment/edge/deploy-to-vercel
 generator client {
-  provider      = "prisma-client-js"
-  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+  provider        = "prisma-client-js"
+  binaryTargets   = ["native", "rhel-openssl-3.0.x"]
+  previewFeatures = ["driverAdapters"]
 }
 
 // See:
@@ -26,8 +28,9 @@ generator fabbrica {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 // Note: Lucia v3 + v3 Prisma adaperでは、全てのフィールドがキャメルケースであることが要求されている。
@@ -216,7 +219,15 @@ enum ContestType {
   TESSOKU_BOOK // 競技プログラミングの鉄則
   MATH_AND_ALGORITHM // アルゴリズムと数学
   ARC // AtCoder Regular Contest
-  OTHERS // その他
+  AGC // AtCoder Grand Contest
+  ABC_LIKE // AtCoder Beginner Contest (ABC) 相当のコンテスト
+  ARC_LIKE // AtCoder Regular Contest (ARC) 相当のコンテスト
+  AGC_LIKE // AtCoder Grand Contest (AGC) 相当のコンテスト
+  UNIVERSITY // University Programming Contests in AtCoder (e.g., UTPC)
+  OTHERS // AtCoder (その他)
+  AOJ_COURSES // AIZU ONLINE JUDGE Courses
+  AOJ_PCK // All-Japan High School Programming Contest (PCK)
+  AOJ_JAG // ACM-ICPC Japan Alumni Group Contest (JAG)
 }
 
 // 11Q(最も簡単)〜6D(最難関)。

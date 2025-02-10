@@ -24,13 +24,17 @@
 - 開発言語
   - [TypeScript](https://www.typescriptlang.org/)
 - JavaScriptのランタイム
-  - [Node.js](https://nodejs.org)
+  - [Node.js](https://nodejs.org): v22.x
 - 汎用フレームワーク
-  - [SvelteKit](https://kit.svelte.dev/)
+  - [Svelte](https://svelte.dev/): v5.x。後方互換性を優先しているが、Runes が利用できるように破壊的な変更が含まれる箇所を段階的に移行予定
+  - [SvelteKit](https://svelte.dev/): v2.x
 - UIライブラリ
-  - [shadcn-svelte](https://www.shadcn-svelte.com/): 主にData Tableを使用予定。将来的には、以下のライブラリを使って実装している部分を置き換える。
   - [Flowbite Svelte](https://flowbite-svelte.com/)
-  - [STWUI](https://stwui.vercel.app/)
+  - [STWUI](https://stwui.vercel.app/): 開発が事実上終了した可能性が高いため、使用しているコンポーネントを調べて別のライブラリに移行する
+- テスティングフレームワーク
+  - [Vitest](https://vitest.dev/): 単体テスト (ユーティリティ、コンポーネント)
+  - [Playwright](https://playwright.dev/): e2eテスト
+  - [Nock](https://github.com/nock/nock): API 統合テスト用の HTTP モック
 - 認証ライブラリ
   - [Lucia](https://lucia-auth.com/)
 - ORM
@@ -43,6 +47,10 @@
 - 文法およびフォーマットチェッカー
   - [ESLint](https://eslint.org/)
   - [Prettier](https://prettier.io/)
+- Search Engine Optimization (SEO) 対策
+  - [Svelte Meta Tags](https://github.com/oekazuma/svelte-meta-tags): メタタグ、Open Graph などの設定
+  - [super-sitemap](https://github.com/jasongitmail/super-sitemap): SvelteKit 専用の sitemap ジェネレータ
+  - robots.txt: Webクローラーのアクセス制御に関する設定
 
 ### インフラ
 

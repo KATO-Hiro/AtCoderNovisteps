@@ -17,7 +17,7 @@
     <a href="https://github.com/AtCoder-Novisteps/AtCoderNovisteps/issues">
         <img alt="GitHub Repo Issues" src="https://img.shields.io/github/issues/AtCoder-Novisteps/AtCoderNovisteps?&style=plastic"/>
     </a>
-    <a href="https://github.com/AtCoder-Novisteps/AtCoderNovisteps/blob/main/LICENSE">
+    <a href="https://github.com/AtCoder-Novisteps/AtCoderNovisteps/blob/staging/LICENSE">
         <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=plastic" alt="License: MIT" />
     </a>
     <a href="https://x.com/acnovisteps">
@@ -36,7 +36,7 @@
 <div align="center">
   <video
     width="720"
-    src="https://github.com/user-attachments/assets/88b19b21-fda3-4337-8266-9243b89e7096"
+    src="https://github.com/user-attachments/assets/690bae58-f653-4b0d-9342-5f6813dcc7e8"
     autoplay
     muted
     controls
@@ -49,13 +49,13 @@
 
 - **回答状況を自分で記録できる**: 「AC (正解)」「解説AC」「挑戦中」「未挑戦」から選べます。
 - **一歩先の問題に挑戦**: 17段階で難易度付けされており、自分の実力に合った問題が探せます。
-- **(開発中) 問題集で得意を伸ばす・苦手を克服**: 例題・類題を通して、各トピックの基礎から応用的な方法まで身につけられます。
+- **問題集で得意を伸ばす・苦手を克服**: 例題・類題を通して、各トピックの基礎から応用的な方法まで身につけられます。
 
 ## 主な機能
 
 - 問題の回答状況の記録
 - 問題一覧: 難易度(ヒューリスティックな判断を含む)を見て、問題を探す
-- (開発中) 問題集: 特定のトピックに関する例題・類題を集中して解く
+- 問題集: 特定のトピックに関する例題・類題を集中して解く
 
 ## 予備知識
 
@@ -71,7 +71,7 @@
 
 1. (初回のみ) ユーザ名とパスワードを入力して、アカウントを作成します。
 2. ログインします。お試し用のアカウント (ユーザ名: guest、パスワード: Hell0Guest) を利用することもできます。
-3. 問題一覧で、グレードおよび問題を選び、回答欄の「更新」をクリックもしくはタップします。
+3. 問題集や問題一覧で、グレードおよび問題を選び、回答欄の「更新」をクリックもしくはタップします。
 4. 該当する回答状況 (デフォルトは「未挑戦」)を選択し、「回答を更新」ボタンを押します。
 
 ## 本サービスのスポンサー(敬称略・順不同)
@@ -102,9 +102,9 @@
 
 ## ご要望、ご報告、お気付きの点など
 
-- [連絡先](https://twitter.com/acnovisteps)
+- [連絡先](https://x.com/acnovisteps)
 
-- [本プロジェクトへの参加方法](https://github.com/KATO-Hiro/AtCoderNovisteps/blob/main/CONTRIBUTING.md)
+- [本プロジェクトへの参加方法](https://github.com/KATO-Hiro/AtCoderNovisteps/blob/staging/CONTRIBUTING.md)
 
 ## 関連プロジェクト・参考資料
 
@@ -118,13 +118,22 @@
   - 貢献内容: 開発メンバーの募集、プロジェクト全体管理・運営、問題の難易度評価、問題集作成など
 - [@hiro](https://x.com/k_hiro1818)
   - 役割: 主にアプリ開発
-  - 貢献内容(予定も含む): アプリの仕様に関する提案・技術選定・設計・実装
+  - 貢献内容(予定も含む): アプリの仕様に関する提案・技術選定・設計・実装、問題の難易度評価
 - [@ウルズニャー](https://x.com/uruzunyaa)
   - 役割: 問題の難易度評価
-  - 貢献内容(予定も含む): 問題の難易度評価
-- [@nonon](https://x.com/nonon_math)
+  - 貢献内容(予定も含む): 問題の難易度評価、問題集作成
+- [@nonon](https://x.com/nonon_kyopro)
   - 役割: 問題の難易度評価
   - 貢献内容(予定も含む): 問題の難易度評価、問題集作成
+- [@Bluebery1001](https://x.com/bluebery1001)
+  - 役割: 問題の難易度評価
+  - 貢献内容(予定も含む): 問題の難易度評価、問題集作成
+- [@seekworser（ぷせうど）](https://x.com/pseudo_thermal)
+  - 役割: 教材作成、問題の難易度評価、アプリ開発
+  - 貢献内容(予定も含む): 解説記事作成、問題の難易度評価、アプリの仕様に関する提案・技術選定・設計・実装
+- [@Satsuki / さつき先生](https://x.com/Satsuki_8198)
+  - 役割: 教材作成
+  - 貢献内容(予定も含む): 解説動画作成、デザイン監修
 - [@あべみ](https://x.com/cats0830v)
   - 役割: アプリ開発
   - 貢献内容(予定も含む): アプリ開発
@@ -137,4 +146,4 @@
 
 ## ライセンス
 
-[MIT](https://github.com/KATO-Hiro/AtCoderNovisteps/blob/main/LICENSE)
+[MIT](https://github.com/KATO-Hiro/AtCoderNovisteps/blob/staging/LICENSE)

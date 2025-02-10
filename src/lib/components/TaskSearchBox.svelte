@@ -5,6 +5,7 @@
 
   import SelectWrapper from '$lib/components/SelectWrapper.svelte';
   import LabelWithTooltips from '$lib/components/LabelWithTooltips.svelte';
+  import GradeLabel from '$lib/components/GradeLabel.svelte';
 
   import type {
     WorkBookTasksBase,
@@ -18,7 +19,7 @@
     addTaskToWorkBook,
     PENDING,
   } from '$lib/utils/workbook_tasks';
-  import { taskUrl } from '$lib/utils/task';
+  import { getTaskUrl } from '$lib/utils/task';
 
   export let tasks: Tasks = [];
   // HACK: やむなくデータベースへの保存用と問題集作成・編集用で分けている。
@@ -35,7 +36,7 @@
       .every(
         (word) =>
           (word.trim().length > 0 && task.title.toLowerCase().includes(word.toLowerCase())) ||
-          taskUrl(task.contest_id, task.task_id).toLowerCase().includes(word.toLowerCase()),
+          getTaskUrl(task.contest_id, task.task_id).toLowerCase().includes(word.toLowerCase()),
       );
   };
 
@@ -162,6 +163,7 @@
         active={index === focusingId}
         key={task.task_id}
         focusClass="bg-primary-500 text-white"
+        class="truncate md:truncate-none"
       >
         <button
           type="button"
@@ -181,11 +183,21 @@
             focusingId = PENDING;
           }}
         >
-          <h3 class="text-left">
-            {task.title}
-          </h3>
-          <div>
-            {taskUrl(task.contest_id, task.task_id)}
+          <!-- Task name and grade -->
+          <div class="flex items-start justify-start space-x-3 mb-1">
+            <div class="max-w-fit shrink-0">
+              <GradeLabel taskGrade={task.grade} />
+            </div>
+            <h3 class="text-lg xs:text-xl">
+              {task.title}
+            </h3>
+          </div>
+
+          <!-- Task url -->
+          <div class="text-left">
+            <span aria-label="Task URL: {getTaskUrl(task.contest_id, task.task_id)}">
+              {getTaskUrl(task.contest_id, task.task_id)}
+            </span>
           </div>
         </button>
       </ListgroupItem>

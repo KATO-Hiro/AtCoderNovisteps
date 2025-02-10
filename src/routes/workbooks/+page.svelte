@@ -44,8 +44,8 @@
     {
       title: '解法別',
       workBookType: WorkBookType.SOLUTION,
-      tooltipContent: '特定のアルゴリズム・データ構造の習熟度を確認できます。',
-      canUsersView: false,
+      tooltipContent: '特定のアルゴリズム・データ構造の基礎から応用問題まで挑戦できます。',
+      canUsersView: true,
     },
     {
       title: 'ユーザ作成',
@@ -116,7 +116,7 @@
 </script>
 
 <div class="container mx-auto w-5/6">
-  <HeadingOne title="問題集（アルファ版）" />
+  <HeadingOne title="問題集" />
 
   <!-- TODO: フィルタリング機能などが実装できたら、一般ユーザも問題集を作成できるようにする -->
   {#if role === Roles.ADMIN}

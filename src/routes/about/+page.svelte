@@ -14,7 +14,7 @@
     },
     {
       description:
-        '(開発中) 問題集で得意を伸ばす・苦手を克服: 例題・類題を通して、各トピックの基礎から応用的な方法まで身につけられます。',
+        '問題集で得意を伸ばす・苦手を克服: 例題・類題を通して、各トピックの基礎から応用的な方法まで身につけられます。',
     },
   ];
 
@@ -22,7 +22,10 @@
     { name: '@けんちょん', account: 'https://x.com/drken1215' },
     { name: '@hiro', account: 'https://x.com/k_hiro1818' },
     { name: '@ウルズニャー', account: 'https://x.com/uruzunyaa' },
-    { name: '@nonon', account: 'https://x.com/nonon_math' },
+    { name: '@nonon', account: 'https://x.com/nonon_kyopro' },
+    { name: '@Bluebery1001', account: 'https://x.com/bluebery1001' },
+    { name: '@seekworser（ぷせうど）', account: 'https://x.com/pseudo_thermal' },
+    { name: '@Satsuki / さつき先生', account: 'https://x.com/Satsuki_8198' },
     { name: '@あべみ', account: 'https://x.com/cats0830v' },
     { name: '@わさせき', account: 'https://x.com/wasaseki' },
     { name: '@toshi201', account: 'https://x.com/toshicon201' },
@@ -81,7 +84,6 @@
   </div>
 
   <!-- Usage -->
-  <!-- TODO: 問題集機能を一般公開するときに説明文を更新 -->
   <div class="mt-5 mb-5">
     <Heading tag="h2" class="text-xl mb-2 text-gray-900 dark:text-white">使い方</Heading>
     <List tag="ol" class="text-gray-800 dark:text-gray-300 ml-6 space-y-1">
@@ -91,7 +93,7 @@
         を利用することもできます。
       </Li>
       <Li>
-        問題一覧で、グレードおよび問題を選び、回答欄の「更新」をクリックもしくはタップします。
+        問題集や問題一覧で、グレードおよび問題を選び、回答欄の「更新」をクリックもしくはタップします。
       </Li>
       <Li>該当する回答状況 (デフォルトは「未挑戦」)を選択し、「回答を更新」ボタンを押します。</Li>
     </List>
